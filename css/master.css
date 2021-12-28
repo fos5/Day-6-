@@ -1,0 +1,70 @@
+body{
+  font: 16px/1.6 Tahoma;
+  margin: 0;
+  padding: 0;
+}
+/* container */
+.container{
+  width: 95%;
+  overflow: hidden;
+  margin:auto;
+}
+/* that black thing on top lol */
+.main-header{
+  background-color: black;
+  width: 100%;
+  min-height: 50px;
+}
+/* the about header */
+.about{
+  text-align: center;
+}
+/* tabs */
+.tabs{
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 100%;
+}
+ /* buttons */
+.tablinks{
+   background-color: inherit;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   padding: 15px 17px;
+   transition: 0.3s;
+   font-size: 17px;
+ }
+.tablinks:hover{
+  background-color: #fff;
+}
+
+/* Create an active and current tab-link class */
+.tablinks.active{
+  background-color: #fff;
+}
+
+/*tab content */
+.tab-content{
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.tab{
+  display: none;
+}
+.tab1{display: block;}
+
+/*flex box */
+.flex-box{
+display: flex;
+grid-template-columns: 1fr, 2fr;
+grid-gap: 3rem;
+}
+@media (max-width :768px) {
+.flex-box{
+  display: block;
+}
+}
